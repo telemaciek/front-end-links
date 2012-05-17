@@ -83,3 +83,230 @@ Migrating to CreateLinks (20120517181315)
   [1m[36m (4.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
   [1m[35m (0.1ms)[0m  PRAGMA index_list("categories")
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("links")[0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-05-17 20:21:14 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/categories/" for 127.0.0.1 at 2012-05-17 20:22:01 +0200
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  Rendered categories/index.html.erb within layouts/application (8.3ms)
+Compiled categories.css  (23ms)  (pid 2653)
+Compiled links.css  (3ms)  (pid 2653)
+Compiled scaffolds.css  (35ms)  (pid 2653)
+Compiled application.css  (153ms)  (pid 2653)
+Compiled jquery.js  (4ms)  (pid 2653)
+Compiled jquery_ujs.js  (0ms)  (pid 2653)
+Compiled categories.js  (699ms)  (pid 2653)
+Compiled links.js  (368ms)  (pid 2653)
+Compiled application.js  (1253ms)  (pid 2653)
+Completed 200 OK in 1772ms (Views: 1650.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-17 20:22:03 +0200
+Served asset /application.css - 200 OK (41ms)
+
+
+Started GET "/assets/links.css?body=1" for 127.0.0.1 at 2012-05-17 20:22:03 +0200
+Served asset /links.css - 200 OK (30ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-05-17 20:22:03 +0200
+Served asset /categories.css - 200 OK (10ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-17 20:22:03 +0200
+Served asset /scaffolds.css - 200 OK (35ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-17 20:22:03 +0200
+Served asset /jquery.js - 200 OK (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-17 20:22:03 +0200
+Served asset /jquery_ujs.js - 200 OK (11ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-05-17 20:22:03 +0200
+Served asset /categories.js - 200 OK (2ms)
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2012-05-17 20:22:03 +0200
+Served asset /links.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-17 20:22:03 +0200
+Served asset /application.js - 200 OK (105ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2012-05-17 20:27:54 +0200
+
+ActionController::RoutingError (uninitialized constant HomeController):
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `_run__1058110980__call__370667098__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/telemaciek/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/telemaciek/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/telemaciek/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/telemaciek/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2012-05-17 20:31:59 +0200
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.8ms)
+Compiled home.css  (3ms)  (pid 2653)
+Compiled application.css  (19ms)  (pid 2653)
+Compiled home.js  (373ms)  (pid 2653)
+Compiled application.js  (459ms)  (pid 2653)
+Completed 200 OK in 564ms (Views: 563.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-17 20:32:00 +0200
+Served asset /application.css - 304 Not Modified (43ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-05-17 20:32:00 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/links.css?body=1" for 127.0.0.1 at 2012-05-17 20:32:00 +0200
+Served asset /links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-17 20:32:00 +0200
+Served asset /home.css - 200 OK (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-17 20:32:00 +0200
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-05-17 20:32:00 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-17 20:32:00 +0200
+Served asset /home.js - 200 OK (9ms)
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2012-05-17 20:32:00 +0200
+Served asset /links.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-17 20:32:00 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-17 20:32:00 +0200
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-17 20:32:00 +0200
+Served asset /application.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-05-17 20:32:08 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-05-17 20:32:10 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-05-17 20:32:11 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-17 20:32:26 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-17 20:32:26 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-05-17 20:32:26 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-17 20:32:26 +0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/links.css?body=1" for 127.0.0.1 at 2012-05-17 20:32:26 +0200
+Served asset /links.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-17 20:32:26 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-17 20:32:26 +0200
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2012-05-17 20:32:26 +0200
+Served asset /links.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-17 20:32:26 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-17 20:32:26 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-05-17 20:32:26 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-17 20:32:26 +0200
+Served asset /application.js - 304 Not Modified (11ms)
