@@ -1,2 +1,16 @@
+
 <h1>Home#index</h1>
+
+<% @categories.each do |c| %>
+
+  <%= c.name %>
+<br><br>
+  <% c.links.each do |l| %>
+
+   <%= link_to l.name, l.url %> 
+<br><br>
+  <% end %>
+-----<br><br>
+<% end %>
+
 <p>Find me in app/views/home/index.html.erb</p>

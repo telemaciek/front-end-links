@@ -16,8 +16,8 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :category_id %><br />
-    <%= f.number_field :category_id %>
+    <%= f.label :category_id, 'Category' %><br />
+    <%= f.select :category_id, Category.all.collect {|c| c.id.to_s+' '+c.name }  %>
   </div>
   <div class="field">
     <%= f.label :url %><br />
