@@ -1,16 +1,19 @@
 
-<h1>Home#index</h1>
+<h1>Front-end links</h1>
 
 <% @categories.each do |c| %>
-
-  <%= c.name %>
-<br><br>
+<section>
+  <div class="<%= c.name %>">
+    <h2>
+      <%= c.name %>
+    </h2>
+    <ul>
   <% c.links.each do |l| %>
-
-   <%= link_to l.name, l.url %> 
-<br><br>
+      <li>
+        <%= link_to l.name, l.url %> 
+      </li>
   <% end %>
------<br><br>
+    </ul>
+  </div>
+</section>
 <% end %>
-
-<p>Find me in app/views/home/index.html.erb</p>
