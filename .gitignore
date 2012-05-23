@@ -1,9 +1,6 @@
 db/*.sqlite3
 log/*.log
 tmp/**/*
-Gemfile~
-Gemfile.lock
-Gemfile
 config/application.rb
 .bundle
 .rvmrc
