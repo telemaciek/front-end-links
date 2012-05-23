@@ -1,25 +1,13 @@
-<h1>Listing categories</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Position</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+<div class="list">
 <% @categories.each do |category| %>
-  <tr>
-    <td><%= category.name %></td>
-    <td><%= category.position %></td>
-    <td><%= link_to 'Show', category %></td>
-    <td><%= link_to 'Edit', edit_category_path(category) %></td>
-    <td><%= link_to 'Destroy', category, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+	<div class="element">
+	<%= category.name %> (<%= category.position %>)
+	<span><%= link_to 'Show', category %>
+	<%= link_to 'Edit', edit_category_path(category) %>
+	<%= link_to 'Destroy', category, confirm: 'Are you sure?', method: :delete %></span>
+	</div>
 <% end %>
-</table>
-
+</div>
 <br />
 
 <%= link_to 'New Category', new_category_path %>

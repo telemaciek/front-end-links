@@ -108,6 +108,34 @@ a, a:hover {
 	color: #222;
 }
 
+div.list {
+	padding-top: 40px;
+}
+div.list .element {
+	max-width: 500px;
+	line-height: 16px;
+	padding-bottom: 2px;
+	padding-top: 2px;	
+	overflow: hidden;	
+}
+.element:hover {
+	background: #eee;
+}
+div.list .element span {
+	width: 250px;
+	float:right;
+}
+div.list .element a {
+	display: inline-block;
+	border-radius: 2px;
+	background: #444;
+	color: #fff;
+	padding: 2px 4px;
+	text-underline: none;
+	margin-right: 2px;
+}
+footer {display:none;}
+
 /* Control visibility */
 
 .fun,
