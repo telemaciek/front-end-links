@@ -1,1 +1,1 @@
-This is a simple rails app. Very, very simple.
+A simple rails app powering http://front-end-links.herokuapp.com/

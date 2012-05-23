@@ -6,3 +6,4 @@ Gemfile.lock
 Gemfile
 config/application.rb
 .bundle
+.rvmrc
