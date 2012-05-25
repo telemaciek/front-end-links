@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl"><head>
+<html lang="pl">
+<head>
 <meta charset="utf-8" /> 
 <title>
-Front-end links
+  This is front-end
 </title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -11,24 +12,24 @@ Front-end links
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 <h1>
-	<img src="/assets/logo.png" alt="Front-end links">
+  <a href="/">Refresh</a>
+  <img src="/assets/logo.png" alt="This is front-end">
 </h1>
-
+<div class="about">
+  <p>
+    Writing front-end code on several machines and don't want to sync bookmarks? Perhaps you can benefit from this collection of links. Put together by <a href="http://maciejszafraniec.com/">Maciej Szafraniec</a>
+  </p>
+</div>
 <%= yield %>
-
-<footer>
-  <%= link_to 'About', about_url, :class => 'a' %>
-  <%= link_to 'FEL', root_url, :class => 'h' %>
-</footer>
 <script>
   $(function(){
-    
     $('#container').masonry({
       itemSelector: 'section'
     });
-
+    $('h1 img').on('click', function(){
+      $('div.about p').slideToggle(160);
+    });
   });
 </script>
 </body>
